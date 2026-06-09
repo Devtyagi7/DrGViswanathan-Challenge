@@ -1,0 +1,27 @@
+package Day3FindSmallestLetterGreaterThanTarget;
+
+public class Solutions {
+    public char nextGreatestLetter(char[] letters, char target) {
+        int low = 0;
+        int high = letters.length - 1;
+        int ans = 0;
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+            if (letters[mid] > target) {
+                ans = mid;
+                high = mid - 1;
+            } else {
+                low = mid + 1;
+            }
+        }
+        return letters[ans];
+    }
+
+    public static void main(String[] args) {
+        Solutions obj = new Solutions();
+        char[] letters = { 'c', 'f', 'j' };
+        char target = 'a';
+        System.out.println("Answer = " +
+        obj.nextGreatestLetter(letters, target));
+    }
+}
