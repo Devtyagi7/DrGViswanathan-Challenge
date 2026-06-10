@@ -1,6 +1,6 @@
 package Day3FindSmallestLetterGreaterThanTarget;
 
-public class Solutions {
+public class Main {
     public char nextGreatestLetter(char[] letters, char target) {
         int low = 0;
         int high = letters.length - 1;
@@ -18,7 +18,7 @@ public class Solutions {
     }
 
     public static void main(String[] args) {
-        Solutions obj = new Solutions();
+        Main obj = new Main();
         char[] letters = { 'c', 'f', 'j' };
         char target = 'a';
         System.out.println("Answer = " +

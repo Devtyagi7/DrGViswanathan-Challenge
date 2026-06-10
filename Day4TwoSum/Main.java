@@ -1,6 +1,6 @@
 package Day4TwoSum;
 import java.util.HashMap;
-public class Solutions {
+public class Main {
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
@@ -13,7 +13,7 @@ public class Solutions {
         return new int[]{};
     }
     public static void main(String[] args) {
-        Solutions obj = new Solutions();
+        Main obj = new Main();
         int[] nums = {2, 7, 11, 15};
         int target = 9;
         int[] ans = obj.twoSum(nums, target);

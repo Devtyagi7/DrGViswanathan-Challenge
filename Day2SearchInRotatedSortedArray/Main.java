@@ -1,5 +1,5 @@
 package Day2SearchInRotatedSortedArray;
-public class Solutions {
+public class Main {
     public int search(int[] arr, int target) {
         int low = 0, high = arr.length - 1;
         while (low <= high) {
@@ -27,7 +27,7 @@ public class Solutions {
         return -1;
     }
     public static void main(String[] args) {
-        Solutions obj = new Solutions();
+        Main obj = new Main();
         int[] nums = {4, 5, 6, 7, 0, 1, 2};
         int target = 0;
         System.out.println("Target index = " + obj.search(nums, target));

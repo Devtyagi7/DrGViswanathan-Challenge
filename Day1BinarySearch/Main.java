@@ -1,5 +1,5 @@
 package Day1BinarySearch;
-public class Solutions {
+public class Main {
     public int search(int[] nums, int target) {
         int low = 0;
         int high = nums.length - 1;
@@ -18,7 +18,7 @@ public class Solutions {
         return -1;
     }
     public static void main(String[] args) {
-        Solutions obj = new Solutions();
+        Main obj = new Main();
         int[] nums = {-1, 0, 3, 5, 9, 12};
         int target = 9;
         int ans = obj.search(nums, target);
